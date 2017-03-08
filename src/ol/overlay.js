@@ -463,6 +463,8 @@ ol.Overlay.prototype.updateRenderedPosition = function(pixel, mapSize) {
   var offset = this.getOffset();
 
   var positioning = this.getPositioning();
+  
+  this.setVisible(true);
 
   var offsetX = offset[0];
   var offsetY = offset[1];
@@ -514,8 +516,6 @@ ol.Overlay.prototype.updateRenderedPosition = function(pixel, mapSize) {
       this.rendered_.top_ = style.top = top;
     }
   }
-
-  this.setVisible(true);
 };
 
 
