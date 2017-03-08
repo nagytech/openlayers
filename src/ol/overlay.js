@@ -463,6 +463,8 @@ ol.Overlay.prototype.updateRenderedPosition = function(pixel, mapSize) {
   var offset = this.getOffset();
 
   var positioning = this.getPositioning();
+  
+  this.setVisible(true);
 
   this.setVisible(true);
   
